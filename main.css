@@ -1,3 +1,18 @@
-body {
-    background-color: silver;
+.image-container {
+    padding:5px;
+    border: solid grey 1px;
+    border-radius: 5px;
+}
+
+#image {
+    border-radius: 0px;
+}
+
+#petName {
+    font-weight: bold;
+    color: gray;
+}
+
+#petWords {
+    color: #333;
 }
