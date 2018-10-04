@@ -36,20 +36,39 @@
     margin-right: 30px;
 }
 
-#cat {
+.cat {
     background-color: lavender;
     color: royalblue;
     font-size: 1.1em;
 }
 
-#dino {
+.dino {
     background-color: oldlace;
     color: sandybrown;
     font-size: 1.1em;
 }
 
-#dog {
+.dog {
     background-color: #dff0d8;
     color: seagreen;
     font-size: 1.1em;
+}
+
+.buttons {
+    display: inline-block;
+}
+    
+.btn-cats {
+    background-color: mediumturquoise;
+    color: white;
+}
+    
+.btn-dogs {
+    background-color: mediumseagreen;
+    color: white;
+}
+    
+.btn-dinos {
+    background-color: sandybrown;
+    color: white;
 }
