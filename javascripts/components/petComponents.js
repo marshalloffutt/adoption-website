@@ -22,7 +22,7 @@ const petsBuilder = () => {
         domString +=        `<p class="card-title text-center" id="petWords">${pets[i].color}</p>`;
         domString +=        `<p class="card-text text-center" id="petWords">${pets[i].specialSkill}</p>`;
         domString +=    `</div>`;
-        domString +=    `<div class="card-footer text-center text-capitalize border-secondary" id="${pets[i].type}">${pets[i].type}</div>`;
+        domString +=    `<div class="card-footer text-center text-capitalize border-secondary ${pets[i].type}">${pets[i].type}</div>`;
         domString += `</div>`;
     }
     printToDom(domString)
