@@ -39,4 +39,3 @@ const petsBuilder = (petsArray) => {
 };
 
 export {petsBuilder, setPets, getPetz, sortPets}
-
