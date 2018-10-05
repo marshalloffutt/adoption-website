@@ -22,20 +22,20 @@ const sortPets = (e) => {
 
 const petsBuilder = (petsArray) => {
     let domString = '';
-    for (let i = 0; i < petsArray.length; i++) {
-        domString += `<div class="card pet pet-card border-secondary mb-3 pet" id="iJustNeedSomeSpace" style="max-width: 18rem;">`;
-        domString +=    `<div class="card-header text-center border-secondary" id="petName">${petsArray[i].name}</div>`;
-        domString +=    `<div class="card-body text-secondary">`;
-        domString +=        `<div class="container image-container">`;
-        domString +=            `<img class="card-img" id="image" src="${petsArray[i].imageUrl}" alt="${petsArray[i].name}">`;
-        domString +=        `</div>`;
-        domString +=        `<p class="card-title text-center" id="petWords">${petsArray[i].color}</p>`;
-        domString +=        `<p class="card-text text-center" id="petWords">${petsArray[i].specialSkill}</p>`;
-        domString +=    `</div>`;
-        domString +=    `<div class="card-footer text-center text-capitalize border-secondary ${petsArray[i].type}">${petsArray[i].type}</div>`;
-        domString += `</div>`;
-    }
+    petsArray.forEach((pet) => {
+    domString += `<div class="card pet pet-card border-secondary mb-3 pet" id="iJustNeedSomeSpace" style="max-width: 18rem;">`;
+    domString +=    `<div class="card-header text-center border-secondary" id="petName">${pet.name}</div>`;
+    domString +=    `<div class="card-body text-secondary">`;
+    domString +=        `<div class="container image-container">`;
+    domString +=            `<img class="card-img" id="image" src="${pet.imageUrl}" alt="${pet.name}">`;
+    domString +=        `</div>`;
+    domString +=        `<p class="card-title text-center" id="petWords">${pet.color}</p>`;
+    domString +=        `<p class="card-text text-center" id="petWords">${pet.specialSkill}</p>`;
+    domString +=    `</div>`;
+    domString +=    `<div class="card-footer text-center text-capitalize border-secondary ${pet.type}">${pet.type}</div>`;
+    domString += `</div>`;
+    })
     printToDom(domString)
-};
+    };
 
 export {petsBuilder, setPets, getPetz, sortPets}
