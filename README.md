@@ -1,6 +1,6 @@
 # Adoption Website
 
-A fake pet adoption website where you can choose to adopt a cat, a dog, or a dinosaur. The purpose of this assignment was to get us used to modular javascript, and introduces us to JSON, and making XMLHttpRequests to bring in data from JSON.
+A fake pet adoption website where the user can choose to adopt a cat, a dog, or a dinosaur. The purpose of this assignment was to get us accustomed to modular JavaScript, while introducing JSON, XMLHttpRequests to bring in data from JSON. It also uses standard JavaScript for click events, and filtering.
 
 ## Screenshots
 ![main screen shot](./screenshots/pic1.png)
@@ -20,5 +20,3 @@ hs -p 9999
 ```
 localhost: 9999
 ```
-* Click the pet buttons at the top of the page to filter out the unwanted pet types.
-* Click the all button to show all pets.
